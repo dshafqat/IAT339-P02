@@ -1,1 +1,421 @@
-<!-- This is code is for IAT339 P02  -->
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="css/flexbox.css" rel="stylesheet">
+    <title>P1-STYLEGUIDE</title>
+  </head>
+
+  <body>
+    <img src="images/logo.png" alt="company-logo"/>
+    <h2>IAT339 - P01</h2>
+    <h3>STYLEGUIDE</h3>
+
+    <div class="main-nav">
+      <nav>
+      <ul>
+        <li> <a href="index.html"> Styleguide </a> </li>
+        <li> <a href="proof.html"> Git Synced Proof </a> </li>
+        <li> <a href="sitemap.html"> Sitemap </a></li>
+        <li> <a href="wireframes.html"> Wireframes </a> </li>
+        <li><a href="citations.html"> Citations </a> </li>
+      </ul>
+      </nav>
+    </div>
+
+    <section>
+      <h3>Contents</h3>
+      <ul>
+        <li class="bold">Styleguide</li>
+        <ul>
+          <li><a href="#inter">Basic Interactive Elements</a></li>
+          <li><a href="#text-styling">Text Styling</a></li>
+          <li><a href="#modular-pattern">Modular Pattern Elements</a></li>
+        </ul>
+      </ul>
+    </section>
+    <section>
+      <section id="interactive_elements">
+            <!-- Default Button styling section -->
+            <h1 id="inter">Basic Interactive Elements</h1>
+            <section>
+                <h2>In-text link</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.in-text-link</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;a href="#" class="in-text-link"&gt;In-text link&lt;/a&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <a class="in-text-link" href="#">In-text link</a>
+            </section>
+            <section>
+                <h2>Navigation Button</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.main-nav</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;div class="main-nav"&gt; <br> &nbsp;&lt;nav&gt; <br> &nbsp;&nbsp;&lt;ul&gt; <br> &nbsp;&nbsp;&nbsp;&lt;li&gt; <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Default Button&lt;/a&gt;
+                    <br> &nbsp;&nbsp;&nbsp;&lt;/li&gt; <br> &nbsp;&nbsp;&lt;/ul&gt; <br> &nbsp;&lt;/nav&gt <br> &lt;/div&gt; <br>
+                </code>
+                <h3>Rendered element:</h3>
+                <div class="main-nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">Navigation Button</a>
+                        </li>
+                    </ul>
+                </nav>
+                </div>
+            </section>
+
+            <section>
+                <h2>Submit/Reset Buttons</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.submit-reset-button</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;a href="#" class="submit-reset-button"&gt;Submit/Reset Button&lt;/a&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <a class="submit-reset-button" href="#">Submit/Reset Button</a>
+            </section>
+
+            <section>
+                <h2>Text Input Field</h2>
+
+                <h3>CSS selector:</h3>
+                <p>#text-input-field, .input-field-label</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;form&gt;<br>
+                    &nbsp;&lt;label for="text-input-field" class="input-field-label"&gt;Subject:&lt;/label&gt;<br>
+                    &nbsp;&lt;input type="text" id="text-input-field" placeholder="i.e. Text Sample"&gt;<br>
+                    &lt;/form&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                <form>
+                    <label for="text-input-field" class="input-field-label">Subject:</label>
+                    <input type="text" id="text-input-field" placeholder="i.e. Sample Text">
+                </form>
+            </section>
+            <section>
+                <h2>Website Color Swatches</h2>
+
+                <h3>CSS selector:</h3>
+                <p>.container .color-swatch .blue .yellow .gray .white </p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;div class="container"&gt;
+                      &lt;p class="color-swatch blue"&gt;#0D1926&lt;/p&gt;
+                      &lt;p class="color-swatch yellow"&gt;#F6AC67&lt;/p&gt;
+                      &lt;p class="color-swatch gray"&gt;#F5F5F5&lt;/p&gt;
+                      &lt;p class="color-swatch white"&gt;#FFFFFF&lt;/p&gt;
+                    &lt;/div&gt;"
+                </code>
+
+                <h3>Rendered element:</h3>
+                <div class="container">
+                  <p class="color-swatch blue">#0D1926</p>
+                  <p class="color-swatch yellow">#F6AC67</p>
+                  <p class="color-swatch gray">#F5F5F5</p>
+                  <p class="color-swatch white">#FFFFFF</p>
+                </div>
+            </section>
+        </section>
+    </section>
+    <section id="text-style">
+
+            <section>
+                <h1 id="text-styling">Text Styling</h1>
+
+                <div class="heading-wrapper">
+                    <h3>CSS selector for Heading 1:</h3>
+                    <p>h1</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;h1 id="h1-style"&gt;Heading 1&lt;/h1&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <h1 id="h1-style">Heading 1</h1>
+                </div>
+
+                <div class="heading-wrapper">
+                    <h3>CSS selector for Heading 2:</h3>
+                    <p>h2</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <h2>Heading 2</h2>
+                </div>
+
+                <div class="heading-wrapper">
+                    <h3>CSS selector for Heading 3:</h3>
+                    <p>h3</p>
+
+                    <h3>Sample code:</h3>
+                    <code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code>
+
+                    <h3>Rendered element:</h3>
+                    <h3>Heading 3</h3>
+                </div>
+            </section>
+
+            <section>
+                <h2>Paragraphs</h2>
+
+                <h3>CSS selector:</h3>
+                <p>p</p>
+
+                <h3>Sample code:</h3>
+                <code>&lt;p&gt;Paragraph&lt;/p&gt;</code>
+
+                <h3>Rendered element:</h3>
+                <p>Paragraph</p>
+            </section>
+
+            <section>
+                <h2>Unordered</h2>
+
+                <h3>CSS selector:</h3>
+                <p>ul</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;ul&gt;<br>
+                    &nbsp;&lt;li&gt;Unordered list 1&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;Unordered list 2&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;Unordered list 3&lt;/li&gt;<br>
+                    &lt;/ul&gt;<br>
+                </code>
+
+                <h3>Rendered element:</h3>
+                <ul>
+                    <li>Unordered list 1</li>
+                    <li>Unordered list 2</li>
+                    <li>Unordered list 3</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Ordered Lists</h2>
+
+                <h3>CSS selector:</h3>
+                <p>ol</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                    &lt;ol&gt;<br>
+                    &nbsp;&lt;li&gt;Ordered list 1&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;Ordered list 2&lt;/li&gt;<br>
+                    &nbsp;&lt;li&gt;Ordered list 3&lt;/li&gt;<br>
+                    &lt;/ol&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+                <ol>
+                    <li>Ordered list 1</li>
+                    <li>Ordered list 2</li>
+                    <li>Ordered list 3</li>
+                </ol>
+            </section>
+        </section>
+    <section id="modular_pattern">
+        <h1 id="modular-pattern">Modular Pattern Elements</h1>
+          <section>
+                  <h2>Main Navigation</h2>
+
+                  <h3>CSS selector:</h3>
+                  <p>nav, a</p>
+
+                  <h3>Sample code:</h3>
+                  <code>
+                    &lt;nav id="home-nav"&gt;
+                      &lt;div class="center"&gt;
+                        &lt;ul&gt;
+                            &lt;li&gt;&lt;a class="button-nav" href="#"&gt;What's New&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="button-nav" href="#"&gt;Deals&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="button-nav" href="#"&gt;Products&lt;/a&gt;
+                            &lt;/li&gt;&lt;li&gt;&lt;a class="button-nav" href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="button-nav" href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+                            &lt;li&gt;&lt;a class="button-nav" href="#"&gt;Cart&lt;/a&gt;&lt;/li&gt;
+                        &lt;/ul&gt;
+                      &lt;/div&gt;
+                    &lt;/nav&gt;
+                  </code>
+
+                  <h3>Rendered element:</h3>
+
+                  <nav id="home-nav">
+                    <div class="center">
+                      <ul>
+                          <li><a class="button-nav" href="#">What's New</a></li>
+                          <li><a class="button-nav" href="#">Deals</a></li>
+                          <li><a class="button-nav" href="#">Products</a>
+                          </li><li><a class="button-nav" href="#">Services</a></li>
+                          <li><a class="button-nav" href="#">About</a></li>
+                          <li><a class="button-nav" href="#">Cart</a></li>
+                      </ul>
+                    </div>
+                  </nav>
+        </section>
+        <section>
+                <h2>Detailed Product</h2>
+
+                <h3>CSS selector:</h3>
+                <p>div</p>
+
+                <h3>Sample code:</h3>
+                <code>
+                  &lt;div class="container"&gt;
+                    &lt;div class="prod-detailed"&gt;
+                      &lt;h2&gt; Series II Lite&lt;h2&gt;
+                        &lt;picture&gt;
+                          &lt;source srcset="images/samsung1.webp" type="image/webp"&gt;
+                          &lt;source srcset="images/samsung1" type="image/jpeg"&gt;
+                          &lt;img src="images/samsung1.jpg"&gt;
+                        &lt;/picture&gt;
+                        &lt;h3&gt;starting from $299&lt;/h3&gt;
+                        &lt;a class="submit-reset-button" href="#"&gt;View More&lt;/a&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                </code>
+
+                <h3>Rendered element:</h3>
+
+                <div class="container">
+                  <div class="prod-detailed">
+                    <h2> Series II Lite<h2>
+                      <picture>
+                        <source srcset="images/samsung1.webp" type="image/webp">
+                        <source srcset="images/samsung1" type="image/jpeg">
+                        <img src="images/samsung1.jpg">
+                      </picture>
+                      <h3>starting from $299</h3>
+                      <a class="submit-reset-button" href="#">View More</a>
+                  </div>
+                </div>
+      </section>
+      <section>
+              <h2>Website Grid Structure</h2>
+
+              <h3>CSS selector:</h3>
+              <p>div</p>
+
+              <h3>Sample code:</h3>
+              <code>
+                &lt;div class="container"&gt;
+                  &lt;div class="prod-detailed"&gt;
+                    &lt;h2&gt; Series II Lite&lt;h2&gt;
+                      &lt;picture&gt;
+                        &lt;source srcset="images/samsung1.webp" type="image/webp"&gt;
+                        &lt;source srcset="images/samsung1" type="image/jpeg"&gt;
+                        &lt;img src="images/samsung1.jpg"&gt;
+                      &lt;/picture&gt;
+                      &lt;h3&gt;starting from $299&lt;/h3&gt;
+                      &lt;a class="submit-reset-button" href="#"&gt;View More&lt;/a&gt;
+                  &lt;/div&gt;
+                  &lt;div class="prod-detailed"&gt;
+                    &lt;h2&gt; Series II &lt;h2&gt;
+                      &lt;picture&gt;
+                        &lt;source srcset="images/samsung2.webp" type="image/webp"&gt;
+                        &lt;source srcset="images/samsung2" type="image/jpeg"&gt;
+                        &lt;img src="images/samsung2.jpg"&gt;
+                      &lt;/picture&gt;
+                      &lt;h3&gt;starting from $399&lt;/h3&gt;
+                      &lt;a class="submit-reset-button" href="#"&gt;View More&lt;/a&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              </code>
+
+              <h3>Rendered element:</h3>
+
+              <div class="container">
+                <div class="prod-detailed">
+                  <h2> Series II Lite<h2>
+                    <picture>
+                      <source srcset="images/samsung1.webp" type="image/webp">
+                      <source srcset="images/samsung1" type="image/jpeg">
+                      <img src="images/samsung1.jpg">
+                    </picture>
+                    <h3>starting from $299</h3>
+                    <a class="submit-reset-button" href="#">View More</a>
+                </div>
+                <div class="prod-detailed">
+                  <h2> Series II <h2>
+                    <picture>
+                      <source srcset="images/samsung2.webp" type="image/webp">
+                      <source srcset="images/samsung2" type="image/jpeg">
+                      <img src="images/samsung2.jpg">
+                    </picture>
+                    <h3>starting from $399</h3>
+                    <a class="submit-reset-button" href="#">View More</a>
+                </div>
+              </div>
+    </section>
+    <section>
+            <h2>Browsing All Products Category</h2>
+
+            <h3>CSS selector:</h3>
+            <p>div</p>
+
+            <h3>Sample code:</h3>
+            <code>
+              &lt;h3&gt; Most Popular &lt;/h3&gt;
+              &lt;div class="container"&gt;
+                &lt;div class="all-category"&gt;
+                  &lt;h2&gt; 4 Series Smartphone &lt;h2&gt;
+                &lt;/div&gt;
+                &lt;div class="all-category"&gt;
+                  &lt;h2&gt;  Series Tablet &lt;h2&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+              &lt;br&gt;&lt;br&gt;
+              &lt;div class="container"&gt;
+                &lt;div class="all-category"&gt;
+                  &lt;h2&gt;  4 Series Smartwatch &lt;h2&gt;
+                &lt;/div&gt;
+                &lt;div class="all-category"&gt;
+                  &lt;h2&gt;  4 Series Earphone &lt;h2&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            </code>
+
+            <h3>Rendered element:</h3>
+
+            <h3> Most Popular </h3>
+            <div class="container">
+              <div class="all-category">
+                <h2> 4 Series Smartphone <h2>
+              </div>
+              <div class="all-category">
+                <h2>  Series Tablet <h2>
+              </div>
+            </div>
+            <br><br>
+            <div class="container">
+              <div class="all-category">
+                <h2>  4 Series Smartwatch <h2>
+              </div>
+              <div class="all-category">
+                <h2>  4 Series Earphone <h2>
+              </div>
+            </div>
+  </section>
+    </section>
+  </body>
+</html>
