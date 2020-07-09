@@ -2,16 +2,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&family=Questrial&display=swap');
 
 html{
-  background-color: #000000;
-  padding-left: 1em;
+ /* padding-left: 1em;*/
   scroll-behavior: smooth;
 }
 body{
   font-family: 'Nunito', sans-serif;
   font-weight: 300 !important;
-  color: #0D1926;
-  padding:2rem;
-  display: block;
+  background-color: #F5F5F5;
+
+;
+  /*padding:2rem;
+*/  display: block;
 }
 h1{
   font-family: "Questrial", sans-serif;
@@ -32,12 +33,13 @@ a{
 
 
 section{
-  border-top: 0.15em solid #0d1926;
+/*  border-top: 0.15em solid #0d1926;
   margin-block-start: 0.90em;
   margin-block-end: 0.90em;
   margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  color: #F6AC67;
+  margin-inline-end: 0px;*/
+  margin-left: 4rem;
+
 }
 .submit-reset-button {
     background-color: #0d1926;
@@ -53,6 +55,10 @@ section{
 .main-nav nav{
   display: block;
   padding:0rem;
+  margin: 0;
+  background-color: #0D1926;
+  text-align: center;
+
 }
 .main-nav a{
   color:white;
@@ -73,7 +79,7 @@ section{
 }
 .main-nav ul{
     margin:0;
-    padding:0;
+    padding:0.3rem;
     display: block;
     list-style-type:none;
     margin-block-start: 0em;
@@ -82,11 +88,11 @@ section{
     margin-inline-end: 0px;
 }
 .main-nav li{
+    display: inline-block;
     margin: 0;
     padding: 0.45rem;
     background-color: #0D1926;
     color: white;
-    float: center;
 }
 /*swatches styles*/
 .color-swatch{
@@ -172,7 +178,6 @@ section{
     padding: 0.45rem;
     background-color: #0D1926;
     color: white;
-
 }
 .center{
   width: 100%;
@@ -196,4 +201,72 @@ section{
   text-align: center;
   background-color: #0D1926;
   color:white;
+}
+
+
+*,*::after,*::before{
+  box-sizing:border-box;
+}
+
+
+/* Styling for product listing */
+
+.product-listing {
+    position: relative;
+    display: block;
+    width: 22%;
+}
+
+.product-listing img {
+    width: 100%;
+    opacity: 0.25;
+    transition: opacity 0.5s;
+}
+
+.product-listing img:hover {
+    opacity: 1;
+}
+
+.product-detail {
+    display: inline-flex;
+    width: 100%;
+}
+
+.product-detail h3, .product-detail p {
+    flex: 1 0 auto;
+    color: black;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    width: max-content;
+    height: fit-content;
+    /*text-shadow: 2px 2px #102c34;*/
+}
+
+.product-detail h3 {
+    top: 0rem;
+}
+
+.product-detail p {
+    top: 2.5rem;
+}
+
+/* Website grid */
+
+.grid-wrapper {
+    display: inline-flex;
+    width: 100%;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex: 0 1 22%;
+    margin-right: 2rem;
+}
+
+.placeholder {
+    display: block;
+    width: 100%;
+    border: 1px solid black;
 }
