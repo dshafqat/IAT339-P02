@@ -54,7 +54,7 @@ section{
 /*main navigation styles*/
 .main-nav nav{
   display: block;
-  padding:0rem;
+  padding:0.8rem;
   margin: 0;
   background-color: #0D1926;
   text-align: center;
@@ -207,8 +207,6 @@ section{
 *,*::after,*::before{
   box-sizing:border-box;
 }
-
-
 /* Styling for product listing */
 
 .product-listing {
